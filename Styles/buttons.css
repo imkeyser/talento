@@ -1,0 +1,16 @@
+.button__white__borders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.button__white__borders:hover {
+    background: #fff;
+    color: #FF5ACD;
+    transition: 0.5s;
+}
