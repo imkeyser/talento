@@ -11,7 +11,13 @@
 
 .button__white__borders:hover {
     background: #fff;
-    color: #FF5ACD;
+    color: #060057;
+    transition: 0.5s;
+}
+
+.button__white__borders:focus {
+    background: #fff;
+    color: #060057;
     transition: 0.5s;
 }
 
@@ -19,3 +25,61 @@
     width: 210px;
     height: 40px;
 }
+
+.button__white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.button__white:hover {
+    background: transparent;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.button__white:focus {
+    background: #fff;
+    color: #060057;
+    transition: 0.5s;
+}
+
+.hero__left__side__buttons > .button__white__borders {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+}
+
+.hero__left__side__buttons > .button__white__borders:hover {
+    width: 200px;
+    height: 40px;
+    color: #060057;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.hero__left__side__buttons > .button__white {
+    width: 200px;
+    height: 40px;
+    color: #060057;
+}
+
+.hero__left__side__buttons > .button__white:hover {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.button_discover a {
+    color: #fff;
+}
+
+
