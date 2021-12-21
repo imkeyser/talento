@@ -53,8 +53,38 @@ body {
     font-weight: 200;
 }
 
+.active__link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.navbar__menu__mobile {
+    display: none;
+    height: 30px;
+}
+
+.mobile__navigation__page {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+}
+
+.mobile__navigation__page a {
+    color: #fff;
+    font-size: 1.3em;
+}
+
 @media screen and (max-width: 800px) {
     .navbar__links {
         display: none;
+    }
+    .navbar__menu__mobile {
+        display: block;
     }
 }
