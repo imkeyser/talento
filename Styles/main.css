@@ -18,7 +18,7 @@ body {
     background: #8E2DE2;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
+
 }
 
 .navbar__container {
@@ -55,11 +55,11 @@ body {
     font-weight: 200;
 }
 
-.active__link {
+/*.active__link {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
-}
+}*/
 
 .navbar__menu__mobile {
     display: none;
@@ -121,7 +121,7 @@ body {
 }
 
 .paragraph__purple_s {
-    color: #060057;
+    color: #c1bcff;
     font-weight: bold;
 }
 
@@ -142,7 +142,7 @@ body {
 
 .hero__right__side img {
     margin-top: -110px;
-
+    max-width: 620px;
 }
 
 .hero__center__discover {
@@ -196,7 +196,7 @@ body {
     margin-left: 12.5px;
     margin-bottom: 25px;
     padding: 10px 15px 10px 15px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.849);
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -211,12 +211,109 @@ body {
     color: #060057;
 }
 
+.services__container > .hero__center__discover {
+    margin-top: 100px;
+}
+
+.contact__container {
+    width: 100%;
+    height: 100vh;
+}
+
+.contact__container h1 {
+    text-align: center;
+}
+
+.contact__form__container {
+    width: 45%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background: red;*/
+    margin-top: 7%;
+}
+
+.contact__form__container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input__contact__form {
+    width: 90%;
+    padding: 5px 10px 5px 10px;
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 1.0em;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.input__contact__form:focus {
+    padding: 5px 15px 5px 15px;
+    transition: 0.3s;
+}
+
+.contact__form__container textarea {
+    width: 90%;
+    height: 200px;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.0em;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    transition: 0.3s;
+}
+
+.contact__form__container textarea:focus {
+    padding: 10px 15px 10px 15px;
+    transition: 0.3s;
+}
+
 @media screen and (max-width: 800px) {
+    .navbar__logo {
+        font-size: 1.3em;
+    }
     .navbar__links {
         display: none;
     }
     .navbar__menu__mobile {
         display: block;
+    }
+    .hero__right__side img {
+        margin-top: 40px;
+    }
+    .services__container h1 {
+        font-size: 2.1em;
+    }
+    .services__grid {
+        margin-top: 50px;
+    }
+    .contact__container {
+        margin-top: 100vh;
+        height: 100vh;
+    }
+    .contact__container h1 {
+        font-size: 2.1em;
+    }
+    .contact__form__container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar__logo {
+        font-size: 1.3em;
+    }
+    .navbar__links {
+        display: none;
+    }
+    .navbar__menu__mobile {
+        display: block;
+    }
+    main {
+        margin-top: -50px;
     }
     .hero__right__side img {
         display: none;
@@ -225,11 +322,11 @@ body {
         width: 100%;
     }
     .title__white__xl {
-        font-size: 9vw;
+        font-size: 10vw;
         width: 80vw;
     }
     .paragraph__purple_s {
-        font-size: 2.5vw;
+        font-size: 4vw;
         max-width: 80vw;
     }
     .hero__left__side__buttons {
@@ -241,5 +338,34 @@ body {
     }
     .hero__center__discover {
         display: none;
+    }
+    .hero__left__side__buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .hero__container {
+        height: 100vh;
+    }
+    .services__container {
+        height: 100vh;
+        margin-top: -170px;
+    }
+    .services__grid {
+        margin-top: 50px;
+    }
+    .contact__container {
+        margin-top: 100vh;
+        height: 100vh;
+    }
+    .contact__form__container {
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+    }
+    .contact__form__container .input__contact__form {
+        height: 25px;
+        border-radius: 5px;
+        font-size: 1em;
     }
 }

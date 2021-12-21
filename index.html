@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=*, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="styles/buttons.css">
-    <title>TALENTO</title>
+    <title>Talento - Bienvenue</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="home">
             <div class="navbar__container">
                 <div class="navbar__logo">
                     TALENTO
                 </div>
                 <div class="navbar__links">
-                    <a href="/" class="active__link">Acceuil</a>
+                    <a href="#home" class="active__link">Acceuil</a>
                     <a href="#services">Services</a>
-                    <a href="/">Contact</a>
+                    <a href="#contact">Contact</a>
                     <a href="/" class="button__white__borders">Proposer un service</a>
                 </div>
                 <div class="navbar__menu__mobile">
@@ -33,9 +33,9 @@
     <main>
         <!-- MOBILE NAVIGATION PAGE -->
             <div class="mobile__navigation__page">
-                <a href="/" class="active__link">Acceuil</a>
+                <a href="#home" class="active__link">Acceuil</a>
                 <a href="#services">Services</a>
-                <a href="/">Contact</a>
+                <a href="#contact">Contact</a>
                 <a href="/" class="button__white__borders">Proposer un service</a>
             </div>
         <!-- END OF MOBILE NAVIGATION PAGE -->
@@ -73,29 +73,54 @@
                     </h1>
                     <div class="services__grid">
                         <div class="service__item">
-                            <h1>
-                                Cadreurs
-                            </h1>
-                            <img src="Styles/Images/Slam Illustrations/PNG/Camera.png" width="100%">
+                            <a href="/">
+                                <h1>
+                                    Cadreurs
+                                </h1>
+                                <img src="Styles/Images/Slam Illustrations/PNG/Camera.png" width="100%">
+                            </a>
                         </div>
                         <div class="service__item">
-                            <h1>
+                            <a href="/">
+                               <h1>
                                 Monteurs
                             </h1>
-                            <img src="Styles/Images/Slam Illustrations/PNG/iMac.png" width="100%">
+                            <img src="Styles/Images/Slam Illustrations/PNG/iMac.png" width="100%"> 
+                            </a>
                         </div>
                         <div class="service__item">
-                            <h1>
+                            <a href="/">
+                                <h1>
                                 Musiques
                             </h1>
                             <img src="Styles/Images/Slam Illustrations/PNG/Headphones.png" width="100%">
+                            </a>
                         </div>
                         <div class="service__item">
-                            <h1>
+                            <a href="/">
+                                <h1>
                                 Graphistes
                             </h1>
                             <img src="Styles/Images/Slam Illustrations/PNG/iPad.png" width="100%">
+                            </a>
                         </div>
+                    </div>
+                    <div class="hero__center__discover">
+                        <a href="#contact" class="button__discover">Contactez nous<br>  ↧</a>
+                    </div>
+                </div>
+                <div class="contact__container" id="contact">
+                    <h1 class="title__white__xl title__middle">
+                        CONTACTEZ-NOUS
+                    </h1>
+                    <div class="contact__form__container">
+                        <form method="POST" action="#">
+                            <input class="input__contact__form" type="text" name="firstname" placeholder="Prénom">
+                            <input class="input__contact__form" type="email" name="email" placeholder="Adresse mail">
+                            <input class="input__contact__form" type="text" name="subject" placeholder="Sujet">
+                            <textarea name="message" placeholder="Écrivez votre message"></textarea>
+                            <input type="submit" class="button__white__borders" value="Envoyer">
+                        </form>
                     </div>
                 </div>
             </div>
